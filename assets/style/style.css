@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    /* background-color: #e8f1f2; */
+    background-image: url(../img/bg.svg);
+    background-size: cover;
+    font-family: 'Rubik', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: auto;
+}
+
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+header{
+    text-align: center;
+    background-color: #1B98E0;
+    padding: 1rem;
+}
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #006494;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+}
+
+header h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo{
+    font-size: 3rem;
+    color:#006494;
+    margin: 1rem 0; 
+    text-align: center;
+}
+
+header > img{
+    position: absolute;
+    left: 0;
+    width: 60px;
+    padding-left: 15px;
+}
+
+.footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #1B98E0;
+    color: white;
+    text-align: center;
+ }
+
+.container{
+    padding: 2rem;
+    margin-bottom: 1rem;
+    margin: 0 3rem;
+}
+
+.container > p, .container > h2 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+form{
+    padding: 20px;   
+    width: 60%;
+    margin: 10px auto;
+}
+
+input[type=radio]:nth-child(8):checked ~ .sexo-outro{
+    visibility: visible;
+}
+
+.sexo-outro{
+    visibility: hidden;
+}
+
+.botoes{
+    border-radius: 10px;
+    width: 5rem;
+    height: 2rem;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.botoes:hover{
+    box-shadow: 0 0 10px #1B98E0;
+}
+
+.enviar:hover{
+    background-color: limegreen;
+}
+
+.resetar:hover{
+    background-color: red;
+}
+
+div{
+    padding: 0.5rem;
+}
+
+label, legend{
+    text-transform: capitalize;
+}
+
+input[type=text], input[type=email]{
+    margin-bottom: 5px;
+    height: 1.3rem;
+}
+
+input[type=radio], input[type=checkbox]{
+    margin: 0.4rem 0;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.texto-nav{
+    transition: 0.5s;
+}
+
+#pag-atual{
+    color: rgba(0, 0, 0, 0.714);
+}
+
+.texto-nav:hover, #pag-atual:hover{
+    color: black;
+}
+
+.container > h2{
+    font-size: 1.7rem;
+}
+
+#div-img{
+    text-align: center;
+    padding: 1px;
+
+}
+
+#img-cachorro-de-rua{
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2px 2px cadetblue;
+    transition: .6s;
+    width: 50%;
+    height: auto;
+}
+
+#img-cachorro-de-rua:hover{
+    transform: scale(0.98);
+    box-shadow: 0 0 6px 6px #1B98E0;
+}
+
+.fora-container{
+    padding: 2rem;
+    padding-left: 5rem;
+    margin-bottom: 0rem;
+    margin: 0 3rem;
+}
+
+table{
+    margin: 2rem auto;
+    border: 1px solid #006494;
+    transition: .6s;
+}
+
+table th, td{
+    border: 1px solid #006494;
+    padding: .5rem;
+}
+
+table:hover{
+    background-color:#1B98E0;
+    transform: scale(1.03);
+}
+
+.container-img{
+    text-align: center;
+}
+
+.container-img > img{
+    /* object-fit: cover; */
+    border-radius: 1rem;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 0px 2px 2px #1B98E0;
+    transition: .6s;
+}
+
+.container-img > img:hover{
+    transform: scale(0.98);
+    box-shadow: 0 0 6px 6px #1B98E0;
+}
+
+.container-img > iframe{
+    margin: 2rem 0;
+    width: 50%;
+    height: auto;
+}
+
+input:focus{
+    background: rgba(255, 255, 255, 0);
+}
+
+span{
+    color: red;
+}
+
+#dados{
+    display: none;
+    margin: 0 8px;
+    background-color: #1b98e0a0;
+}
+
+.div-botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset + span {
+    display: flex;
+    align-items: center;
+}
+
+.limpar-form:hover, .alterar-form:hover, .confirmar-form:hover{
+    background: #1b98e0a0;
+}
+
+@media screen and (max-width: 1386px){
+    form{
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .titulo{
+        font-size: 2rem;
+        margin: 1rem -.5rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px){
+    
+    #img-cachorro-de-rua{
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px cadetblue;
+        transition: .6s;
+        width: 80%;
+        height: auto;
+    } 
+
+    .container-img > img{
+        border-radius: 1rem;
+        width: 30%;
+        height: auto;
+        display: flex;
+        margin: 5px auto;
+    }
+
+    
+}
+
+@media screen and (max-width: 500px){
+    
+    #img-cachorro-de-rua{
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px cadetblue;
+        transition: .6s;
+        width: 80%;
+        height: 7rem;
+    }
+    
+    .titulo{
+        font-size: 1.5rem;
+        margin: 1rem -.5rem;
+    }
+
+    .container-img > img{
+        border-radius: 1rem;
+        width: 40%;
+        height: auto;
+        display: flex;
+        margin: 5px auto;
+    }
+
+    .container h2, .container p{
+        font-size: 1rem;
+    }
+
+    .container{
+        padding: 1rem;
+        margin-bottom: 1rem;
+        margin: 0 3rem;
+    }
+    
+}

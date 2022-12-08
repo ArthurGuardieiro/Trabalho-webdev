@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/shiba.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>APA</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="./assets/img/icone.png" alt="">
+        <h1>
+            APA
+        </h1>
+    </header>
+
+    <nav>
+        <a href="./index.html" class="texto-nav">home</a>
+        <a href="./atividades.html" class="texto-nav">atividades</a>
+        <a href="./contato.html" class="texto-nav" id="pag-atual">contato</a>
+        <a href="./localizacao.html" class="texto-nav">localização</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="titulo">Faça contato conosco por meio deste formulário</h1>
+    </div>
+
+    <form action="#" id="form">
+
+        <div>
+            <label for="nome">informe seu nome</label>
+            <input type="text" name="nome" id="nome" required>
+            <span></span>
+        </div>
+
+        <div>
+            <label for="nome">informe seu email</label>
+            <input type="email" name="email" id="email" required placeholder="usuario@...">
+            <span></span>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>informe seu gênero</legend>
+                <input type="radio" name="sexo" id="masculino">
+                <label for="masculino">masculino</label><br>
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">feminino</label><br>
+                <input type="radio" name="sexo" id="outro">
+                <label for="outro">outro</label>
+                <input type="text" name="sexo" id="texto-outro" class="sexo-outro"><br>
+                <input type="radio" name="sexo" id="nao-informado">
+                <label for="nao-informar">prefiro não informar</label>
+            </fieldset>
+            <span></span>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>qual o motivo do contato</legend>
+                <input type="checkbox" name="motivo" id="adocao">
+                <label for="adocao">quero adotar</label><br>
+                <input type="checkbox" name="motivo" id="ajuda">
+                <label for="ajuda">quero ajudar</label><br>
+                <input type="checkbox" name="motivo" id="voluntario">
+                <label for="voluntario">quero ser um voluntario</label>
+            </fieldset>
+            <span></span>
+        </div>
+
+        
+        <div>
+            <button type="reset" class="botoes resetar">apagar</button>
+            <button type="submit" class="botoes enviar">enviar</button>
+        </div>
+        
+        <div id="dados"></div>
+        
+    </form>
+
+    <footer class="footer">
+        <div class="contato">
+            <h5>Contato</h5>
+            <p>diretoria@apauberlandia.org.br</p>
+        </div>
+
+        <div>
+            <a href="https://www.instagram.com/apa.uberlandia/" class="">
+                <img src="./assets/img/icons8-instagram-48.png" alt="" >
+            </a>
+
+            <a href="https://www.linkedin.com/company/apauberlandia/" class="">
+                <img src="./assets/img/icons8-linkedin-48.png" alt="">
+            </a>
+
+            <a href="https://www.facebook.com/apa.uberlandia" class="">
+                <img src="./assets/img/icons8-facebook-novo-48.png" alt="" >
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/contato.js"></script>
+</body>
+
+</html>
