@@ -30,6 +30,7 @@ botao.addEventListener('click', (e) => {
     const alterarForm = document.querySelector('.alterar-form');
     alterarForm.addEventListener('click', (e) => {
         e.preventDefault();
+        mostrar.style.display = 'none';
         liberarInputs();
     })
 
