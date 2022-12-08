@@ -5,6 +5,6 @@ página da APA já existente, porém a criação do html e da estilização fora
 também informações fictícias, como por exemplo a tabela sobre animais resgatos nos últimos anos, que, 
 eu inventei para a conclusão do trabalho.
 
-https://apa-pp1-trabalho1.netlify.app/
+https://arthurguardieiro.github.io/Trabalho-webdev/
 
  
