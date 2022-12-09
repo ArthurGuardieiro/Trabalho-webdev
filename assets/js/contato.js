@@ -8,7 +8,7 @@ const botaoReset = document.querySelector('.resetar');
 const mostrar = document.querySelector('#dados');
 
 botao.addEventListener('click', (e) => {
-
+    console.log('atualizei no githubpages');
 
     e.preventDefault();
 
