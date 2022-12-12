@@ -8,8 +8,6 @@ const botaoReset = document.querySelector('.resetar');
 const mostrar = document.querySelector('#dados');
 
 botao.addEventListener('click', (e) => {
-    
-
     e.preventDefault();
 
     if(!verificaNome(inputNome)) return false;

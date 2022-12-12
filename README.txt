@@ -5,6 +5,8 @@ página da APA já existente, porém a criação do html e da estilização fora
 também informações fictícias, como por exemplo a tabela sobre animais resgatos nos últimos anos, que, 
 eu inventei para a conclusão do trabalho.
 
+Para a parte de javaScript criei algumas funções, tanto para verificações quanto para alterar o CSS de algum input, utilizo a negação de funções para verificação dos inputs para validar o envio ou não do formulário, e alterei coisas básicas, mostrar em que página o usuário está, background e uma imagem, do html/css para melhorar o site.
+
 https://arthurguardieiro.github.io/Trabalho-webdev/
 
  
