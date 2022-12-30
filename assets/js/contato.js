@@ -10,10 +10,7 @@ const mostrar = document.querySelector('#dados');
 botao.addEventListener('click', (e) => {
     e.preventDefault();
 
-    if(!verificaNome(inputNome)) return false;
-    if(!verificaEmail(inputEmail)) return false;
-    if(!verificaRadio(radio)) return false;
-    if(!verificaCheckbox(checkbox)) return false;
+    if(!verificaForm()) return false;
 
     mostrarDados();
 
@@ -33,13 +30,7 @@ botao.addEventListener('click', (e) => {
     })
 
     const confirmarForm = document.querySelector('.confirmar-form');
-    confirmarForm.addEventListener('click', (e) => {
-        e.preventDefault();
-        if(!verificaNome(inputNome)) return false;
-        if(!verificaEmail(inputEmail)) return false;
-        if(!verificaRadio(radio)) return false;
-        if(!verificaCheckbox(checkbox)) return false;
-        form.submit();
+    confirmarForm.addEventListener('click', () => {
     });
 
 
@@ -129,6 +120,15 @@ function alterarElementoOkFieldset(check) {
     fieldset.style.color = '';
     const span = fieldset.nextElementSibling;
     span.innerHTML = '';
+}
+
+function verificaForm(){
+    if(!verificaNome(inputNome)) return false;
+    if(!verificaEmail(inputEmail)) return false;
+    if(!verificaRadio(radio)) return false;
+    if(!verificaCheckbox(checkbox)) return false;
+
+    return true;
 }
 
 function mostrarDados() {
