@@ -235,6 +235,16 @@ span{
     justify-content: space-between;
 }
 
+fieldset{
+    border-color: #006494;
+} 
+
+legend{
+    color: #006494;
+    font-weight: bold;
+    margin-left: 0;
+}
+
 fieldset + span {
     display: flex;
     align-items: center;
